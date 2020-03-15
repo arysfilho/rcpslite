@@ -30,41 +30,41 @@ JSON example:
 "name" : "John Doe",
 "state" : "active",
 "fields" : [
-     { "title" : "address",  
-     "type" : "string",
-     "value" : "5th street" },
+    { "title" : "address",  
+      "type" : "string",
+      "value" : "5th street" },
 
-     { "title" : "birthdate",  
-       "type"  : "date",
-       "value" : "1979/07/15" }
-]
+    { "title" : "birthdate",  
+      "type"  : "date",
+      "value" : "1979/07/15" }
+           ]
 }
 ```
 * http://localhost/api/subscriber/read_one.php?id=1 - GET - Get one subscriber.
 * http://localhost/api/subscriber/update.php - POST - Update a subscriber.
 ```
-    JSON example:
-    {
-    "email" : "johndoe@example.com",
-    "name" : "John Doe",
-    "state" : "active",
-    "fields" : [   
-                     { "title" : "address",  
-                       "type" : "string",
-                       "value" : "5th street" },
+JSON example:
+{
+"email" : "johndoe@example.com",
+"name" : "John Doe",
+"state" : "active",
+"fields" : [   
+      { "title" : "address",  
+        "type" : "string",
+        "value" : "5th street" },
 
-                     { "title" : "birthdate",  
-                       "type"  : "date",
-                       "value" : "1979/07/15" }
-                 ]
-    }
+      { "title" : "birthdate",  
+        "type"  : "date",
+        "value" : "1979/07/15" }
+            ]
+}
 ```
 * http://localhost/api/subscriber/delete.php - POST - Deletes the given subscriber.
 ```
-    JSON example:
-    {
-      "id" : "1"
-    }
+JSON example:
+{
+ "id" : "1"
+}
 ```
 * http://localhost/api/subscriber/search.php?s=john - GET - Look for a subscriber with email or name that contains string john.
 * http://localhost/api/subscriber/read_paging.php - POST - Returns subscribers with paging information.
