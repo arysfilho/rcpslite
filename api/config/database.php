@@ -4,7 +4,7 @@ class Database
     private $host = "localhost";
     private $db_name = "rcp_lite";
     private $username = "root";
-    private $password = "@GoPapiuha1001";
+    private $password = "";
     public $conn;
   
     // get the database connection
